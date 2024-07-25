@@ -1,0 +1,82 @@
+@use "../base";
+
+.blog {
+    background-color: var(--color-blog);
+
+    &__inner {
+        padding: 115px 0;
+    }
+
+    &__heading {
+        font-weight: 1000;
+        font-size: 58px;
+        font-family: "Roboto Slab", serif;
+        text-align: center;
+    }
+
+    &__desc {
+        margin: 23px auto 0 auto;
+        max-width: 570px;
+        text-align: center;
+    }
+}
+
+.blog-content {
+    &__heading {
+        margin-top: 100px;
+    }
+
+    &__item1 {
+        display: flex;
+        gap: 30px;
+        margin-top: 70px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 30px;
+        margin-top: 70px;
+
+        &-image--lg {
+            width: 570px;
+            height: 395px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: opacity 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        &-image {
+            width: 370px;
+            height: 247px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        &-title {
+            display: block;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+
+        &-date {
+            font-size: 14px;
+            color: gray;
+            margin-top: 10px;
+        }
+
+        &-load {
+            border-radius: 10px;
+
+            display: block;
+            margin: 60px auto 0 auto;
+        }
+    }
+}

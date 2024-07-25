@@ -1,0 +1,128 @@
+.blog-detail {
+    &__content {
+        text-align: center;
+        font-style: inherit;
+        line-height: 1;
+        align-items: center;
+
+        &-title {
+            font-size: 5.8rem;
+            font-weight: 700;
+            text-indent: -5px;
+            margin-top: 100px;
+        }
+
+        &-date {
+            font-size: 18px;
+            color: #566363;
+            margin-top: 20px;
+        }
+
+        &-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 192px;
+            margin: 30px auto 0 auto;
+        }
+
+        &-name_author {
+            font-size: 18px;
+            color: #131717;
+        }
+
+        &-thumbnail {
+            border-radius: 20px;
+            height: 575px;
+            margin-top: 60px;
+        }
+
+        &-topic {
+            margin: 27px 19rem;
+            font-size: 16px;
+            color: rgb(109, 108, 108);
+            line-height: 1.5;
+        }
+
+        &-sub_title {
+            margin-top: 55px;
+        }
+
+        &-sub_topic {
+            margin: 15px 10rem 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        &-sup_topic {
+            margin: 15px 10rem 20px;
+            font-size: 16px;
+            color: rgb(109, 108, 108);
+            line-height: 1.5;
+        }
+    }
+
+    &-contact {
+        &_title {
+            text-align: center;
+            margin-top: 55px;
+        }
+        &_wrap-icon {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 18px;
+            width: 36px;
+            height: 36px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            transition: 0.3s;
+            &:hover {
+                background: #2e80ce;
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        margin-top: 100px;
+        gap: 30px;
+
+        &-title {
+            margin-top: 25px;
+        }
+
+        &-read_more {
+            display: block;
+            margin-top: 15px;
+            color: #131717;
+            font-weight: 600;
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+
+        &-image {
+            border-radius: 10px;
+            transition: opacity 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &__latest-topic {
+        margin-top: 12px;
+        width: 100%;
+        height: 66px;
+        font-size: 14px;
+        color: rgb(109, 108, 108);
+        line-height: 171%;
+        overflow: hidden;
+    }
+}

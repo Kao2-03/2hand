@@ -1,0 +1,124 @@
+@use "../base";
+
+.cart {
+    margin-top: 100px;
+
+    &__title {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &-product {
+        display: block;
+        text-align: left;
+        margin-left: 32px;
+    }
+
+    th {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    #Cart__isChoose {
+        margin: 0 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__product-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 40px 20px;
+    }
+    &__product-name {
+        font-size: 18px;
+        width: 252px;
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    &__cost {
+        margin: 0 50px;
+        font-size: 18px;
+        font-weight: 600;
+        width: 34px;
+    }
+    &__sumCost {
+        margin: 0 70px;
+        width: 41px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &__delete {
+        margin: 0 70px;
+        padding: 10px 20px;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    &__quantity-container {
+        margin: 0 36px;
+        width: 124px;
+    }
+    .cart__quantity {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #000;
+        text-align: center;
+        margin: 0 12px;
+        cursor: text;
+    }
+    
+    &__quantity-btn {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #000;
+        background-color: #c4d1d0;
+    }
+    td {
+        border-top: 1px solid #000;
+        vertical-align: middle;
+    }
+
+    #cart__choose-all {
+        @extend #Cart__isChoose;
+    }
+
+    &__delete-all {
+        margin: 40px 20px;
+        label {
+            font-weight: 600;
+            user-select: none;
+        }
+    }
+
+    &__label {
+        font-weight: 600;
+    }
+
+    &__totalCost {
+        font-size: 32px;
+        font-weight: 600;
+        color: #f79e1b;
+        margin: 0 40px 0 20px;
+    }
+    &__buy-btn {
+        padding: 20px 70px;
+
+        font-size: 18px;
+        font-weight: 600;
+        color: #131717;
+        background-color: #ffd44d;
+    }
+    &__total {
+        text-align: right;
+    }
+}
+
+th {
+    padding-bottom: 13px;
+}

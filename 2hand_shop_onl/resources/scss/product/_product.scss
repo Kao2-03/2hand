@@ -1,0 +1,234 @@
+.product {
+    &__heading {
+        margin-top: 100px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 38px;
+        max-width: 860px;
+    }
+
+    &-filter {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        padding: 8px 16px;
+        border: 1px solid #c4d1d0;
+        border-radius: 10px;
+        background: #fff;
+    }
+
+    &__sort {
+        margin-left: auto;
+        margin-right: 12px;
+    }
+
+    &__select {
+        width: 120px;
+        padding: 8px;
+
+        border: 1px solid #c4d1d0;
+        border-radius: 10px;
+
+        font-size: 1.8rem;
+        line-height: 166.667%;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+
+    &-item {
+        max-width: 270px;
+
+        &__thumb-wrap {
+            position: relative;
+
+            &:hover .product-item__add {
+                opacity: 1;
+            }
+        }
+
+        &__thumb {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        &__add {
+            opacity: 0;
+            position: absolute;
+            top: 114px;
+            right: 72px;
+
+            width: 126px;
+            padding: 15px 0;
+
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            background: var(--primary-color);
+            border-radius: 10px;
+            transition: 0.3s;
+
+            &:hover {
+                background: #005d63de;
+            }
+        }
+
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        &__category {
+            font-size: 1.4rem;
+            line-height: 171.429%;
+        }
+
+        &__title {
+            margin-top: 4px;
+            font-weight: 600;
+            color: #131717;
+        }
+
+        &__price {
+            margin-top: 10px;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 175%;
+            color: #131717;
+        }
+
+        &__rate {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 10px;
+        }
+
+        &__review {
+            margin-left: 6px;
+        }
+    }
+
+    &__filter {
+        &-item {
+            min-width: 270px;
+            margin-bottom: 30px;
+            padding: 25px 30px;
+
+            border: 1px solid #e5e5e5;
+            border-radius: 15px;
+
+            &__title {
+                margin-bottom: 17px;
+            }
+
+            &__cate {
+                display: flex;
+                margin-top: 8px;
+                padding: 0;
+                background: transparent;
+                color: #000;
+            }
+
+            &__range {
+                width: 100%;
+                accent-color: var(--primary-color);
+            }
+
+            &__row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 25px;
+            }
+
+            &__desc {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 175%;
+            }
+
+            &__btn {
+                padding: 7px 14px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                border-radius: 8px;
+            }
+        }
+    }
+    &-separate {
+        border-top: 1px solid #e5e5e5;
+    }
+
+    &__load {
+        display: block;
+        margin: 60px auto 0 auto;
+    }
+}
+
+.like-btn {
+    background: transparent;
+
+    &:not(&--liked) &__icon--liked {
+        display: none;
+    }
+
+    &--liked &__icon {
+        display: none;
+    }
+}
+/* Thêm mã CSS cho Popup vào cuối file blade hoặc tập tin CSS riêng */
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.popup-content {
+    text-align: center;
+    font-size: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.tick-icon {
+    width: 100px;
+    height: 100px;
+    margin: 30px 0 60px 0;
+    fill: #16C099; /* Màu của biểu tượng tick */
+}

@@ -1,0 +1,235 @@
+.consign-mnm {
+    max-width: calc(100% - 250px);
+    margin-left: auto;
+    padding: 20px 30px;
+
+    &-top {
+        display: flex;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    &__tab {
+        padding: 14px 20px;
+        color: #7c7c7a;
+        font-size: 2rem;
+        font-weight: 600;
+        background: transparent;
+
+        &--active {
+            color: #005d63;
+            border-bottom: 2px solid #005d63;
+            background: #005d6320;
+        }
+    }
+
+    &-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &--mt {
+            margin-top: 20px;
+        }
+
+        &--before {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 14px;
+                left: 135px;
+                width: 6px;
+                height: 1px;
+                background: #000;
+            }
+        }
+    }
+
+    &__search-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        flex: 1;
+        padding: 4px 0;
+        border: 1px solid #d9d9d9;
+        border-radius: 6px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 210px;
+            width: 1px;
+            height: 100%;
+            background: #d9d9d9;
+        }
+    }
+
+    &__selected {
+        min-width: 200px;
+        padding: 10px;
+        font-size: 1.4rem;
+        color: #595959;
+    }
+
+    &__search {
+        flex: 1;
+        padding-left: 10px;
+        font-size: 1.4rem;
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        &-icon {
+            margin-right: 20px;
+        }
+    }
+
+    &__btn {
+        padding: 12px 24px;
+        font-size: 1.6rem;
+        border-radius: 6px;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #131717;
+    }
+
+    &__date {
+        position: relative;
+        padding: 6px;
+        border: 1px solid #595959;
+        border-radius: 4px;
+
+        &:last-child {
+            margin-left: 8px;
+        }
+    }
+
+    &__heading {
+        margin-top: 40px;
+        font-size: 22px;
+        font-weight: 600;
+        color: #131717;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__head {
+        margin-top: 30px;
+    }
+
+    &-cta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 12px;
+
+        &__btn {
+            background: transparent;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        padding: 10px;
+        background: rgba(82, 216, 255, 0.3);
+        border-radius: 6px;
+    }
+}
+
+.consign--hide {
+    display: none;
+}
+
+.disable {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.consign-detail {
+    &__info {
+        margin-top: 20px;
+    }
+
+    &__info-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    &__text {
+        min-width: 100px;
+        font-size: 1.8rem;
+        line-height: 155.556%;
+    }
+
+    &__name,
+    &__address,
+    &__id {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 155.556%;
+    }
+
+    &__label {
+        margin-top: 30px;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #131717;
+    }
+
+    &__list-img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 20px;
+    }
+
+    &__img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+}
+
+.btn__confirm {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.consign-delete__btn-delete,
+.consign-delete__btn-cancel {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.consign-delete__btn-delete {
+    background: #c21111;
+}
+
+.consign-delete__btn-cancel {
+    background: #f0f0f0;
+}
+
+.delete-consign__content {
+    padding: 20px 30px;
+}
+
+.delete-consign-cta {
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+}

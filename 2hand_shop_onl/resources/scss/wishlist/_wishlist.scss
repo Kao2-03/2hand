@@ -1,0 +1,86 @@
+@use "../base";
+
+.wishlist {
+    //width: 100%;
+    &__header {
+        width: 100%;
+        margin-bottom: 70px;
+        padding: 100px 0;
+        background-image: url("\\public\\images\\wishlist-poster.jpg");
+        background-size: cover;
+    }
+
+    &__title {
+        padding-bottom: 18px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Roboto Slab";
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #000;
+        text-align: center;
+    }
+    &__content {
+        margin: 0 auto;
+    }
+    &__list {
+        width: 90%;
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 5% 11% 25% 20% 20% 19%;
+        align-items: center;
+        border: 1px solid #ddd;
+        padding: 20px 15px;
+    }
+
+    &__header-list {
+        display: grid;
+        grid-template-columns: 5% 36% 0% 20% 20% 19%;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    &__product-delete {
+        padding: 0;
+        background-color: transparent;
+        text-align: left;
+    }
+
+    &__product-img {
+        width: 100px;
+        height: 95px;
+        object-fit: cover;
+    }
+
+    &__product-title {
+        margin: auto 0;
+    }
+
+    &__product-price {
+        margin: auto 0;
+    }
+
+    &__product-stock {
+        margin: auto 0;
+    }
+
+    &__add-to-cart {
+        padding: 10px;
+        margin: auto;
+        width: 130px;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+        border-radius: 5px;
+        background-color: #005d63;
+    }
+}

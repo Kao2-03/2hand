@@ -1,0 +1,142 @@
+@use"../base";
+.sale_analysis-section{
+    padding: 0.1rem;
+    background-color: var(--background-color-admin);
+    margin-left: 250px;
+    width: 100rem;
+    .container{
+        padding-left: 10px;
+    }
+    .sale_analysis-block1{
+        background-color: #ffff;
+        border-radius: 10px;
+        height: 10rem;
+        width: 90rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        padding: 25px;
+        margin: 1.5rem 0 3rem 0;
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+        
+        &__Datetime{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            h1{
+                font-weight: 600;
+            }
+            &-show{
+                display: flex;
+                border-radius: 10px;
+                border: 1px solid #DFE3E8;
+                height: 35px;
+                width: 20rem;
+                align-items: center;
+                margin-left: 20px;
+                padding-left: 10px;
+                gap: 5px;
+                color: black;
+                &-chooseDate_menu{
+                    margin-left: 2rem;
+                }
+            }
+        }
+        &__Status-Order{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            h1{
+                font-weight: 600;
+            }
+            &_dropdown{
+                display: flex;
+                width: 300px;
+                height: 50px;
+                border: 1px solid #DFE3E8;
+                border-radius: 10px;
+                height: 35px;
+                width: 20rem;
+                align-items: center;
+                margin-left: 20px;
+                padding-left: 10px;
+                gap: 0.5rem;
+                color: black;
+                font-size: 16px;
+            }
+        } 
+    }
+    .sale_analysis-block2{
+        background-color: #ffff;
+        border-radius: 10px;
+        height: 70rem;
+        width: 90rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        padding: 25px;
+        margin: 1.5rem 0 3rem 0;
+        &-title1,&-title2{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        &-list{
+            display: flex;
+            gap: 2rem;
+            flex: 1;
+            justify-content: space-between;
+            &-square{
+                margin:3rem 0.3px;
+                padding: 1rem;
+                display: block;
+                border: 1px solid #DFE3E8;
+                border-radius: 10px;
+                width: 13rem;
+                height: 12rem;
+                &-number{
+                    font-size: 22px;
+                    font-weight: 600;
+                    align-items: center;
+                    text-align: center;
+                    padding-top: 2rem;
+                }
+            }
+            
+        }
+        &_type_menu{
+            border: 1px solid #DFE3E8;
+            border-radius: 10px;
+            height: 35px;
+            width: 20rem;
+            margin-left: 64.96rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 11rem;
+            padding-left: 10px;
+            color: black;
+        }
+        
+    }
+    .sale_analysis-block3{
+        border-radius: 10px;
+        border: 1px solid #DFE3E8;
+        width: 85rem;
+        margin-top: 3rem;
+        height: 37rem;
+        &__heading{
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+            background-color: #F6F6F6;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            border: 1px #DFE3E8 solid ;
+            height: 5rem;
+            padding-left: 10px;
+            font-weight: 600;
+            &-title{
+                display: flex;
+                flex: 1;
+            }
+        }
+    }
+}
